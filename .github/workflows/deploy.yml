@@ -1,0 +1,85 @@
+name: Deploy to Server
+on: push
+
+jobs:
+  dsk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+        with:
+          repository: atelierdisko/dsk
+          ref: 1.3
+      - uses: actions/setup-node@v1
+      - uses: actions/setup-go@v1
+        with:
+          go-version: '1.13'
+      - run: yarn install --production=true && yarn build
+        working-directory: ../dsk/frontend
+      - run: make dist/dsk-linux-amd64
+        working-directory: ../dsk
+        env:
+          GO111MODULE: on
+      - uses: actions/upload-artifact@v1
+        with:
+          name: dist-dsk
+          path: ../dsk/dist
+
+  example-design-system:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+        with:
+          repository: rundsk/example-design-system
+          ref: master
+      - uses: actions/upload-artifact@v1
+        with:
+          name: example-design-system
+          path: ../example-design-system
+
+  website:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/upload-artifact@v1
+        with:
+          name: website
+          path: .
+
+  assemble:
+    runs-on: ubuntu-latest
+    needs:
+      - dsk
+      - example-design-system
+      - website
+    steps:
+      - uses: actions/checkout@v1
+        with:
+          repository: atelierdisko/dsk
+          ref: 1.3
+      - uses: actions/download-artifact@v1
+        with:
+          name: dist-dsk
+          path: dist-dsk
+      - uses: actions/download-artifact@v1
+        with:
+          name: website
+          path: website
+      - uses: actions/download-artifact@v1
+        with:
+          name: example-design-system
+          path: "website/Example Design System"
+      - run: |
+          echo 'context = "prod"' >> Hoifile
+          echo '  app { command = "dist-dsk/dsk-linux-amd64 -port {{"{{"}}.P.App.Port{{"}}"}} website" }' >> Hoifile
+          echo '  domain "rundsk.com" {' >> Hoifile
+          echo '  SSL = { certificate = "rundsk.com.crt" certificateKey = "rundsk.com.key" }' >> Hoifile
+          echo '}' >> Hoifile
+      - run: |
+          sed -i 's/__FIGMA_ACCESS_TOKEN__/${{secrets.figma_token}}/' website/dsk.yaml
+      - run: |
+          cp ../dsk/CONTRIBUTING.md "website/80_Development/01_Contributing to DSK.md"
+          cp ../dsk/CHANGELOG.md "website/80_Development/02_Changelog.md"
+      - uses: actions/upload-artifact@v1
+        with:
+          name: assemblage
+          path: .
