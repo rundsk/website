@@ -62,10 +62,10 @@ When we started building DSK we were looking for a tool to help us create the De
 
 DSK is [open source software](https://opensource.org/osd) and available under the permissive BSD License which allows you to download, use and modify the software freely. 
 
-With today’s release we want to emphasize the production readiness of DSK. [The quickstart guide](https://github.com/rundsk/dsk#quickstart) over on our project page on [GitHub](https://github.com/rundsk/dsk) walks you through the process of setting up DSK in four simple steps. 
+With today’s release we want to emphasize the production readiness of DSK. [The quickstart guide](https://github.com/atelierdisko/dsk#quickstart) over on our project page on [GitHub](https://github.com/atelierdisko/dsk) walks you through the process of setting up DSK in four simple steps. 
 
 We’d like to take this special chance and thank all contributors who have been involved in architecting, designing, building, testing, proof reading, peer reviewing and refining the Design System Kit for this release. **At Atelier Disko we design and build great software together.**  
 
-[Visit the Design System Kit Project Page](https://github.com/rundsk/dsk)
+[Visit the Design System Kit Project Page](https://github.com/atelierdisko/dsk)
 
-In case you find a bug, we’re glad to hear about it in our [issue tracker](https://github.com/rundsk/dsk/issues). If you’d like to contribute to the future development of DSK as a designer or developer or have questions, we’ll be answering your email under mariuswilms@mailbox.org and christoph@atelierdisko.de.
+In case you find a bug, we’re glad to hear about it in our [issue tracker](https://github.com/atelierdisko/dsk/issues). If you’d like to contribute to the future development of DSK as a designer or developer or have questions, we’ll be answering your email under mariuswilms@mailbox.org and christoph@atelierdisko.de.

@@ -8,7 +8,7 @@ simple directories. Creating documentation is as easy as adding a
 file to a folder inside the _design definitions tree_.
 
 Get started with our [Step by Step Guide](Getting-Started/Step-by-Step) 
-or [download the latest DSK release](https://github.com/rundsk/dsk/releases/latest).
+or [download the latest DSK release](https://github.com/atelierdisko/dsk/releases/latest).
 
 ![DSK promotional image](dsk_promo_list.jpg)
 

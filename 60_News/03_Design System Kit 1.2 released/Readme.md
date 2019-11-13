@@ -30,7 +30,7 @@ While we had a well tested backend, we were unfortunately held back from
 adding frontend tests by the constraints of keeping JavaScript vanilly and by
 self imposed limitations on accessing the ecosystem.
 
-With React came components and [components are way easier to test](https://github.com/rundsk/dsk/blob/1.2/frontend/src/CodeBlock/index.test.js),
+With React came components and [components are way easier to test](https://github.com/atelierdisko/dsk/blob/1.2/frontend/src/CodeBlock/index.test.js),
 as they encapsulate logic nicely. Lifting some limitations allowed us to access
 the full ecosystem and to bring in state of the art testing tools. We now look
 forward to adding more tests as we go.
@@ -99,13 +99,13 @@ Thank you for supporting Open Source Software.
 ## Give it a spin!
 
 This post probably only touched the surface of changes, please see the
-[changelog](https://github.com/rundsk/dsk/blob/v1.2.0/CHANGELOG.md)
+[changelog](https://github.com/atelierdisko/dsk/blob/v1.2.0/CHANGELOG.md)
 for the complete list of things to execpt. The latest release can be downloaded from the
-[releases section](https://github.com/rundsk/dsk/releases/tag/v1.2.0)
-of our [GitHub project page](https://github.com/rundsk/dsk).
+[releases section](https://github.com/atelierdisko/dsk/releases/tag/v1.2.0)
+of our [GitHub project page](https://github.com/atelierdisko/dsk).
 
 In case you find a bug, we’re glad to hear about it in our [issue
-tracker](https://github.com/rundsk/dsk/issues). If you’d like
+tracker](https://github.com/atelierdisko/dsk/issues). If you’d like
 to contribute to the future development of DSK as a designer or
 developer or have questions, we’ll be answering your email under
 [thankyou@rundsk.com](mailto:thankyou@rundsk.com).
