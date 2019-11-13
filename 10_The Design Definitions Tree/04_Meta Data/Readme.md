@@ -10,7 +10,7 @@ An example of a full meta data file looks like this:
 <script>
 authors:
   - christoph@atelierdisko.de
-  - marius@atelierdisko.de
+  - mariuswilms@mailbox.org
 
 description: >
   This is a very very very fancy component. Lorem ipsum dolor sit amet,

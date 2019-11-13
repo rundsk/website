@@ -8,7 +8,7 @@ A container image can be created using `docker build`.
 
 ```
 docker build \
-	--tag atelierdisko/dsk:1.2.3 \
+	--tag rundsk/dsk:1.2.3 \
 	--build-arg VERSION=1.2.3 \
 	. # <- Note the dot.
 ```

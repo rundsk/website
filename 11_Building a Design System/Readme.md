@@ -14,12 +14,11 @@ These are some Design Systems by large organizations, which are commonly cited a
 * [Atlassian Design](https://atlassian.design)
 * [designsystemsrepo.com/design-systems](designsystemsrepo.com/design-systems): A comprehensive collection of public Design Systems
 
-## Shameless self-plug
+## Business Support
 
-DSK is designed and developed by [Atelier Disko](https://atelierdisko.de/contact), a
+[Atelier Disko](https://atelierdisko.de) is
 German design and software studio based in Hamburg and Berlin, with experience
 in building and maintaining Design Systems.
 
-Don’t worry, you can use DSK on your own, but if you would like some help
-with creating a Design System for your organization, contact [Atelier Disko](https://atelierdisko.de/contact).
-
+Don’t worry, you can use DSK on your own, but if you would like some help with
+creating a Design System for your organization, contact [Atelier Disko](https://atelierdisko.de/contact).

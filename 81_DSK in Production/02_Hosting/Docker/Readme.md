@@ -1,7 +1,7 @@
 # Docker
 
 We make official prebuilt docker container images
-[available on docker hub](https://hub.docker.com/r/atelierdisko/dsk/tags).
+[available on docker hub](https://hub.docker.com/r/rundsk/dsk/tags).
 
 The [Design Definitions Tree](/The-Design-Definitions-Tree), that is
 the folder containing your design system documents, is not part of the container
@@ -21,5 +21,5 @@ docker run --rm -it \
 	-p 80:8080 \
 	--mount type=bind,source="/path/to/ddt",target=/ddt \
 	--env DDT_LANG=en \
-	atelierdisko/dsk:1.2.0
+	rundsk/dsk:1.2.0
 ```

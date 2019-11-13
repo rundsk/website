@@ -2,7 +2,7 @@
 
 ## ⬇️ — Step 1: Download DSK
 
-Visit our downloads page [github.com/atelierdisko/dsk/releases](https://github.com/atelierdisko/dsk/releases) and find the green label “latest release”. Next to it you will see a bunch of download links. If you are using a Mac, click on “dsk-darwin-amd64.zip”. For Linux, click on “dsk-linux-amd64.tar.gz”. This will start the download of the DSK quickstart package for your operating system.
+Visit our downloads page [github.com/rundsk/dsk/releases](https://github.com/rundsk/dsk/releases) and find the green label “latest release”. Next to it you will see a bunch of download links. If you are using a Mac, click on “dsk-darwin-amd64.zip”. For Linux, click on “dsk-linux-amd64.tar.gz”. This will start the download of the DSK quickstart package for your operating system.
 
 ![](download.jpg)
 
@@ -97,7 +97,7 @@ tags:
 
 authors: 
   - christoph@atelierdisko.de
-  - marius@atelierdisko.de
+  - mariuswilms@mailbox.org
 ```
 
 You can create a YAML file like this: Go to your programs folder and search for “TextEdit”. Click the “Format” menu and select “Make Plain Text”.  Save the file and give it the name “meta.yaml”. Place it in the “01-Text Field” folder.
@@ -119,7 +119,7 @@ We need a `.txt`-file for that. Go to your programs folder and search for “Tex
 
 ```
 Christoph Labacher <christoph@atelierdisko.de>
-Marius Wilms <marius@atelierdisko.de>
+Marius Wilms <mariuswilms@mailbox.org>
 ```
 
 Click the “Format” menu and select “Make Plain Text”.  Save the file and name it “AUTHORS.txt” (the file has to be called exactly that). Place it in the root of your design definitions tree (the “my-design-system” folder).

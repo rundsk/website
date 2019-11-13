@@ -6,7 +6,7 @@ To enable automatic full names for each author, create a file called `AUTHORS.tx
 
 ```
 Christoph Labacher <christoph@atelierdisko.de>
-Marius Wilms <marius@atelierdisko.de>
+Marius Wilms <mariuswilms@mailbox.org>
 ```
 
 When the author information of an aspect contains an email address assigned to a person in this file, DSK will display the authors’ full names and link to their email addresses.
