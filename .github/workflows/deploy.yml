@@ -1,4 +1,4 @@
-name: Deploy to Server
+name: Deploy
 on: push
 
 jobs:
@@ -69,17 +69,48 @@ jobs:
           name: example-design-system
           path: "website/Example Design System"
       - run: |
+          echo 'webroot = "website"' >> Hoifile
           echo 'context = "prod"' >> Hoifile
-          echo '  app { command = "dist-dsk/dsk-linux-amd64 -port {{"{{"}}.P.App.Port{{"}}"}} website" }' >> Hoifile
+          echo '  app { command = "dist-dsk/dsk-linux-amd64 -port {{ .P.App.Port }} website" }' >> Hoifile
           echo '  domain "rundsk.com" {' >> Hoifile
-          echo '  SSL = { certificate = "rundsk.com.crt" certificateKey = "rundsk.com.key" }' >> Hoifile
+          echo '  SSL = { certificate = "!system" certificateKey = "!system" }' >> Hoifile
           echo '}' >> Hoifile
       - run: |
           sed -i 's/__FIGMA_ACCESS_TOKEN__/${{secrets.figma_token}}/' website/dsk.yaml
       - run: |
           cp ../dsk/CONTRIBUTING.md "website/80_Development/01_Contributing to DSK.md"
           cp ../dsk/CHANGELOG.md "website/80_Development/02_Changelog.md"
+          mv website/README.md website/01_Home.md
       - uses: actions/upload-artifact@v1
         with:
           name: assemblage
           path: .
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs:
+      - assemble
+    steps:
+      - uses: actions/download-artifact@v1
+        with:
+          name: assemblage
+          path: assemblage
+      - uses: shimataro/ssh-key-action@v1
+        with:
+          public-key: ${{ secrets.deploy_public_key }}
+          private-key: ${{ secrets.deploy_private_key }}
+          known-hosts: ${{ secrets.deploy_known_hosts }}
+      - run: chmod +x assemblage/dist-dsk/*
+      - run: |
+          ssh -o StrictHostKeyChecking=no deploy@${{ secrets.deploy_host }} 'sudo hoictl --project=/var/www/dsk_website unload'
+
+          rsync --stats -h -z -r \
+            --rsh "ssh -p 22 -o StrictHostKeyChecking=no" \
+            --delete \
+            --links \
+            --times \
+            --verbose \
+            --itemize-changes \
+            assemblage/ deploy@${{ secrets.deploy_host }}:/var/www/dsk_website
+
+          ssh -o StrictHostKeyChecking=no deploy@${{ secrets.deploy_host }} 'sudo hoictl --project=/var/www/dsk_website load'
