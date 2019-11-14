@@ -9,6 +9,7 @@ jobs:
         with:
           repository: rundsk/_test_dsk
           ref: 1.3
+          path: dsk
       - uses: actions/setup-node@v1
       - uses: actions/setup-go@v1
         with:
@@ -56,6 +57,7 @@ jobs:
         with:
           repository: rundsk/_test_dsk
           ref: 1.3
+          path: dsk
       - uses: actions/download-artifact@v1
         with:
           name: dist-dsk
