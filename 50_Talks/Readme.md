@@ -1,6 +1,6 @@
 # Talks and Presentations
 
-![Micha introducing Christoph and Marius at code.talks](codetalks_intro.jpg)
+<Image alt="Micha introducing Christoph and Marius at code.talks" src="codetalks_intro.jpg" caption="© Franca Winter"></Image>
 
 <Banner>
 	If you presented about DSK yourself, we'd be glad to add your talk to
@@ -29,7 +29,7 @@ Marius Wilms, code.talks, Hamburg/Germany, 2019, [slides](codetalks_principles_2
 > to a way of developing a product and encourage others to start building
 > their own Design System Tools.
 
-![Christoph presenting at code.talks](codetalks_christoph.jpg)
+<Image alt="Christoph presenting at code.talks" src="codetalks_christoph.jpg" caption="© Michael Reitz, michaelreitz.de"></Image>
 
 ## Where do you build a Design System?
    
@@ -46,7 +46,7 @@ Christoph Labacher & Marius Wilms, UXRoundtable/Design Tools #1/Go User Group, H
 Marius Wilms, Techcamp, Hamburg/Germany, 2018,
 [slides](coding_design_systems_techcamp_2018.pdf)
 	
-![Marius on stage for lightning talk at Techcamp](techcamp_marius.jpg)
+<Image alt="Marius on stage for lightning talk at Techcamp" src="techcamp_marius.jpg" caption="© Torben Conrad"></Image>
 
 > Warum und wie wir DSK entwickelt haben. DSK ist ein Open Source Tool, um Design Systeme zu erstellen.
 
