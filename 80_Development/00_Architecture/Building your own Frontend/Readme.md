@@ -2,7 +2,7 @@
 
 DSK’s built-in frontend is written as a React app and is completely decoupled from the backend – it uses the open [API](../API) to communicate with it.
 
-If you want a custom-styled frontend or need additional frontend features it is possible to build your own frontend using the same API and bundle it with the DSK binary. The default frontend is a good starting point when developing your own. It can be found in the `frontend` folder of this [project](http://github.com/atelierdisko/dsk).
+If you want a custom-styled frontend or need additional frontend features it is possible to build your own frontend using the same API and bundle it with the DSK binary. The default frontend is a good starting point when developing your own. It can be found in the `frontend` folder of this [project](http://github.com/rundsk/dsk).
 
 ## Available API Endpoints
 Please read our [API document](../API) for in depth information.

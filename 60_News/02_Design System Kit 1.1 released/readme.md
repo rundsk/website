@@ -2,7 +2,7 @@
 
 With this release we’re significantly extending the search capabilities,
 introducing initial Git support and refining the built-in frontend of
-[DSK](https://github.com/atelierdisko/dsk).
+[DSK](https://github.com/rundsk/dsk).
 
 ![](/dsk_promo_list.jpg)
 
@@ -37,7 +37,7 @@ Marraffa](https://github.com/rodolv1979/) for working on the built-in frontend
 with us.
 
 Please see the
-[changelog](https://github.com/atelierdisko/dsk/blob/v1.1.0/CHANGELOG.md) for
+[changelog](https://github.com/rundsk/dsk/blob/v1.1.0/CHANGELOG.md) for
 the complete list of changes. The latest release can be downloaded from the
-[releases section](https://github.com/atelierdisko/dsk/releases/tag/v1.1.0) of
-our [GitHub project page](https://github.com/atelierdisko/dsk).
+[releases section](https://github.com/rundsk/dsk/releases/tag/v1.1.0) of
+our [GitHub project page](https://github.com/rundsk/dsk).

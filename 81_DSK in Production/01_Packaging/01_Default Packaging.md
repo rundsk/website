@@ -1,7 +1,7 @@
 # Default Packaging
 
 Usually all you need is, to download the right binary for your platform from
-[the releases section of our project page](https://github.com/atelierdisko/dsk/releases).
+[the releases section of our project page](https://github.com/rundsk/dsk/releases).
 The packaging documentation below gives you an in depth view into the DSK build process,
 which matters most when creating a customized DSK build.
 
