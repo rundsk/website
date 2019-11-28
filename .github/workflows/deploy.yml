@@ -75,7 +75,8 @@ jobs:
           echo 'context = "prod"' >> Hoifile
           echo '  app { command = "dist-dsk/dsk-linux-amd64 -port {{ .P.App.Port }} website" }' >> Hoifile
           echo '  domain "rundsk.com" {' >> Hoifile
-          echo '  SSL = { certificate = "!system" certificateKey = "!system" }' >> Hoifile
+          echo '    www = "drop"' >> Hoifile
+          echo '    SSL = { certificate = "!system" certificateKey = "!system" }' >> Hoifile
           echo '}' >> Hoifile
       - run: |
           sed -i 's/__FIGMA_ACCESS_TOKEN__/${{secrets.figma_token}}/' website/dsk.yaml
