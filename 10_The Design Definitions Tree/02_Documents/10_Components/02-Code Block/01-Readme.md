@@ -93,3 +93,11 @@ function fib(n) {
 </script>
 </CodeBlock>
 ```
+
+## Displaying the content of a file
+
+A `<CodeBlock>` component can also load and display the content of a file stored in the DDT:
+
+```html
+<CodeBlock src="data.json"></CodeBlock>
+```
