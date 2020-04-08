@@ -1,0 +1,5 @@
+description: Code Embeds let you embed snippets from different code sharing platforms. Right now dsk supports Glitch, CodeSandbox and Asciinema.
+
+tags:
+  - documentation
+  - service
