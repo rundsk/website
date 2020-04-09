@@ -58,7 +58,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
         with:
-          repository: runds/dsk
+          repository: rundsk/dsk
           ref: 1.3
           path: dsk
       - uses: actions/download-artifact@v1
