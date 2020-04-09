@@ -17,12 +17,3 @@ _bug_.
 Have an idea for a new killer feature? [Open an issue in our
 tracker](https://github.com/rundsk/dsk/issues/new) and use the
 _enhancement_ label.
-
-## Business Support
-
-[Atelier Disko](https://atelierdisko.de) is
-German design and software studio based in Hamburg and Berlin, with experience
-in building and maintaining Design Systems.
-
-Don’t worry, you can use DSK on your own, but if you would like some help with
-creating a Design System for your organization, contact [Atelier Disko](https://atelierdisko.de/contact).
