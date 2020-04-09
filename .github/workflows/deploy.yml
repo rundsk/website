@@ -95,7 +95,7 @@ jobs:
           name: assemblage
           path: .
 
-  deploy:
+  transfer:
     runs-on: ubuntu-latest
     needs:
       - assemble
