@@ -16,6 +16,9 @@ jobs:
           go-version: '1.13'
       - run: yarn install --production=true && yarn build
         working-directory: ../dsk/frontend
+        env:
+          # Don't convert warnings to errors, we love our warnings.
+          CI: false
       - run: make dist/dsk-linux-amd64
         working-directory: ../dsk
         env:
