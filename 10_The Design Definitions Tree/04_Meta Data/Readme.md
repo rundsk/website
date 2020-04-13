@@ -6,7 +6,7 @@ You can add meta data about an aspect by placing  a special file called `meta.ya
 
 An example of a full meta data file looks like this:
 
-<CodeBlock title="meta.yaml">
+<CodeBlock title="meta.yaml" language="yaml">
 <script>
 authors:
   - christoph@atelierdisko.de

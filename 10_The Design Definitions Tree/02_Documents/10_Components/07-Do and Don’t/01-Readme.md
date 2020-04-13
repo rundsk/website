@@ -12,7 +12,7 @@
 
 # Usage
 
-```
+```html
 <DoDontGroup>
   <Do caption="Do this, it is good!">{do}</Do>
   <Dont caption="Don’t do this, it is not good!">{don’t}</Dont>

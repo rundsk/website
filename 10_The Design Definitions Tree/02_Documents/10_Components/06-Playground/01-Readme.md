@@ -8,7 +8,7 @@
 
 <Playground>{Component}</Playground>
 
-```
+```html
 <Playground>{Component}</Playground>
 ```
 
@@ -16,7 +16,7 @@
 
 <Playground background="pinstripes" backgroundColor="#FED28C">{Component}</Playground>
 
-```
+```html
 <Playground background="pinstripes" backgroundColor="#FED28C">{Component}</Playground>
 ```
 
@@ -28,7 +28,7 @@ With annotations you can highlight specific points on the playground and add a c
 
 <Playground src="annotations.json">{Component}</Playground>
 
-```
+```html
 <Playground src="annotations.json">{Component}</Playground>
 ```
 
@@ -36,4 +36,4 @@ With annotations you can highlight specific points on the playground and add a c
 
 The annotations specification file has to be formatted like this (`annotationColor` is optional):
 
-<CodeBlock src="annotations.json"></CodeBlock>
+<CodeBlock src="annotations.json" language="json"></CodeBlock>

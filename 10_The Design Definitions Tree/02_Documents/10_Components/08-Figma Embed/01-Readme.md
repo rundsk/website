@@ -8,6 +8,6 @@ Before using this component, ensure that you've [registered for](https://www.fig
 and [configured DSK with](The-Design-Definitions-Tree/Configuration)
 a figma personal access token.
 
-```
+```html
 <FigmaEmbed document="Ppu4fKoeiDXCGMB5XgvZefHc" frame="TagComponent"></FigmaEmbed>
 ```

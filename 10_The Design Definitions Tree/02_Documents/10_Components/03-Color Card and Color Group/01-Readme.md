@@ -18,7 +18,7 @@ Moving the mouse over a color card reveals accessibility information about the c
 
 <ColorCard color="#001dff" compact="true">Blue</ColorCard>
 
-```
+```html
 <ColorCard color="#001dff" compact="true">Blue</ColorCard>
 ```
 
@@ -29,7 +29,7 @@ Moving the mouse over a color card reveals accessibility information about the c
   <ColorCard color="#FFE874" comment="A juice shade of yellow!">Yellow</ColorCard>
 </ColorGroup>
 
-```
+```html
 <ColorGroup>
   <ColorCard color="#001dff">Blue</ColorCard>
   <ColorCard color="#FFE874" comment="A juice shade of yellow!">Yellow</ColorCard>
@@ -43,7 +43,7 @@ Moving the mouse over a color card reveals accessibility information about the c
   <ColorCard color="#FFE874">Yellow</ColorCard>
 </ColorGroup>
 
-```
+```html
 <ColorGroup compact="true">
   <ColorCard color="#001dff">Blue</ColorCard>
   <ColorCard color="#FFE874" comment="A juice shade of yellow!">Yellow</ColorCard>
@@ -54,7 +54,7 @@ Moving the mouse over a color card reveals accessibility information about the c
 
 <ColorGroup src="colors.json"></ColorGroup>
 
-```
+```html
 <ColorGroup src="colors.json"></ColorGroup>
 ```
 
@@ -62,4 +62,4 @@ Moving the mouse over a color card reveals accessibility information about the c
 
 The Color Group component expects a file according to the [Lona Color Defintions Spec](https://github.com/airbnb/Lona/blob/master/docs/file-formats/colors.md).
 
-<CodeBlock title="colors.json" src="colors.json"></CodeBlock>
+<CodeBlock title="colors.json" src="colors.json" language="json"></CodeBlock>

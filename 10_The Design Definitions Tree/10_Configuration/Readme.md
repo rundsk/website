@@ -5,7 +5,7 @@
 You can configure DSK by placing a file called `dsk.yaml` in the root of
 your Design Definitions Tree. This configuration file could look like this:
 
-<CodeBlock title="dsk.yaml">
+<CodeBlock title="dsk.yaml" language="yaml">
 <script>
 org: ACME Corp.
 project: Example
@@ -17,6 +17,9 @@ tags:
     color: "#ED6666"
   - name: progress
     color: "#0091AB"
+versions:
+  - live
+  - build-2
 figma:
   accessToken: "83928-2ef48fd1-b2fd-5dc8-8e3f-97dbef8732"
 </script>

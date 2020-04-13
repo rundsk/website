@@ -8,7 +8,7 @@
 
 ## Usage
 
-```
+```html
 <TypographySpecimen src="typography.json"></TypographySpecimen>
 ```
 
@@ -16,4 +16,4 @@
 
 The Typography Specimen component expects a file according to the [Lona Text Style Spec](https://github.com/airbnb/Lona/blob/master/docs/file-formats/text-styles.md).
 
-<CodeBlock src="typography.json"></CodeBlock>
+<CodeBlock src="typography.json" language="json"></CodeBlock>
