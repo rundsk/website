@@ -3,7 +3,7 @@
 ## New feature: Multiple Versions
 In larger organizations it is common for multiple projects to work with a design system. But not every project has the resources necessary to always keep in sync with the latest changes to the design system. To help with the issues that abound DSK is now tightly integrated with version control and supports documenting multiple versions of a design system simultaneously.
 
-When you keep your design system in a Git repository, all you have to do is [create a tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging) for the version you want to expose and tell DSK about it by adding the tags name to the versions property of [DSK’s configuration file](https://rundsk.com/tree/The-Design-Definitions-Tree/Configuration). The built-in frontend will now display a dropdown with all your versions and let users select which one to look at.
+When you keep your design system in a Git repository, all you have to do is [create a tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging) for the version you want to expose and tell DSK about it by adding the tags name to the versions property of [DSK’s configuration file](https://rundsk.com/tree/The-Design-Definitions-Tree/Configuration). The built-in frontend will now display a dropdown with all your versions and lets users select which one to look at.
 
 For a complete list of what other improvements and changes this update introduces please take a look at our comprehensive [changelog](https://github.com/rundsk/dsk/blob/1.3/CHANGELOG.md#130-unreleased).
 
