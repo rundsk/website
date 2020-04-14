@@ -25,13 +25,11 @@ tags:
   - release/0.1
   - progress/draft
 
-version: 1.2.3
-
 custom:
-  - synonyms:
+  synonyms:
     - Input
     - Text Field
-  - platform: iOS
+  platform: iOS
 </script>
 </CodeBlock>
 
