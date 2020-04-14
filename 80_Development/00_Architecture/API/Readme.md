@@ -28,6 +28,10 @@ Version 2 of the API first appeared with DSK Version 1.1.
 | `/filter?q={query}`             | JSON      | Filters nodes by given query |
 | `/messages`                     | WebSocket | For receiving messages, i.e. whenever the tree changes |
 
+### Versioning
+
+Since DSK version 1.3 the API endpoints `/tree`, `/tree/{path}`, `/tree/{path}/{asset}`, `/search?q={query}` and `/filter?q={query}` also support a URL paramter `v` to select one of the available sources returned by the `/sources` endpoint. By default `live` is used. For more information on versioning see [Versioning](/The-Design-Definitions-Tree/Versioning).
+
 ### Filtering & Searching
 
 #### But how do `filter` and `search` differ? 
