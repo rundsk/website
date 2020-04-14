@@ -8,7 +8,7 @@ Your Design Defintions Tree can be just any regular directory, but after a certa
 
 When you keep your design system in a Git repository, all you have to do is [create a tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging) for the version you want to expose and tell DSK about it by adding the tags name to the versions property of [DSK’s configuration file](/The-Design-Definitions-Tree/Configuration). The built-in frontend will now display a dropdown with all your versions in the lower left-hand corner and lets users select which one to look at.
 
-The configuation function as a whitelist, meaning you have to manually add all versions that you want to expose. By default only the `live` version – meaning the current state of your directory – is whitelisted.
+The configuation functions as a whitelist, meaning you have to manually add all versions that you want to expose. By default only the `live` version – the current state of your directory – is whitelisted.
 
 <CodeBlock title="dsk.yaml" language="yaml">
 <script>
