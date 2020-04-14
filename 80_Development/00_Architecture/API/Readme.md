@@ -37,7 +37,7 @@ Since DSK version 1.3 the API endpoints `/tree`, `/tree/{path}`, `/tree/{path}/{
 #### But how do `filter` and `search` differ? 
 
 `filter` by default matches on all the node's "visible" attributes, it always
-returns all matched results without pagination and weighting. Each result is
+returns all matched results without pagination and weighting (up to 500 results). Each result is
 unique in the set and the total number of results and cannot exceed the number
 of total nodes in the tree. We created `filter` for the purpose to drive the
 left hand tree navigation of the built-in frontend.
@@ -47,7 +47,7 @@ and content thoroughly. We imagine that even information about actual search
 behavior can later be included and used to improve search. `search` is used
 to allow users not familar with the design system to perform research and
 associative browsing. _Hits_ are ranked by relevance and a node may appear
-multiple times in the result set.
+multiple times in the result set. DSK will return 50 results at most.
 
 |                   | _Fulltext Search_ | _Filtering_ | _Finding_ |
 | ----------------- | ----------------- | ----------- | --------- |
