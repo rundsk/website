@@ -12,7 +12,7 @@ or [download the latest DSK release](https://github.com/rundsk/dsk/releases/late
 
 ![DSK promotional image](dsk_promo_list.jpg)
 
-## Business Solution Partners
+## Business Solutions Partners
 
 Don’t worry, you can use DSK on your own, but if you would like some help with
 creating a Design System for your organization or running DSK, contact one of
