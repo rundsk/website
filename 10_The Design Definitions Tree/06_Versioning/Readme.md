@@ -1,9 +1,5 @@
 # Versioning
 
-<Banner title="Version Feature">
-  Support for versioning has been added in version 1.3.
-</Banner>
-
 Your Design Defintions Tree can be just any regular directory, but after a certain point it often makes sense to keep it in a [Git repository](https://git-scm.com/). This lets multiple authors collaborate in a more structured fashion, but it also comes with an added benefit: using Git you can have DSK display multiple versions of your design system. This is a powerful feature in larger organisations, were different products might have been built with different versions of the design system.
 
 When you keep your design system in a Git repository, all you have to do is [create a tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging) for the version you want to expose and tell DSK about it by adding the tags name to the versions property of [DSK’s configuration file](/The-Design-Definitions-Tree/Configuration). The built-in frontend will now display a dropdown with all your versions in the lower left-hand corner and lets users select which one to look at.

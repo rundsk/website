@@ -1,7 +1,3 @@
-<Banner title="Version Feature">
-  Documentation components are available since version 1.2.
-</Banner>
-
 # Examples
 
 ## Basic Usage

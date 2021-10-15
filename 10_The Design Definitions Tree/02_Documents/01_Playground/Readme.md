@@ -1,8 +1,3 @@
-<Banner title="Version Feature">
-  This is a feature of the redesigned frontend and available with version 1.2.
-  Playgrounds support interactive components with version 1.4.
-</Banner>
-
 # Playgrounds
 
 Playgrounds are used to demonstrate components. To embed a playground 
